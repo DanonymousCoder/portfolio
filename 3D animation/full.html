@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Full Page Animation</title>
+</head>
+<body>
+      <div id="text"></div>
+  <style>
+    #text{
+      width: 300px;
+    }
+  </style>
+      <script type="text/javascript">
+        var i=0,text;
+        text = "Hi,I am Eniola Henry I am a 13 year old web devloper who is still in secondery school in ISL.  I am dream of being the top software engineer in Africa"
+  
+        function typing() {
+          if(i<text.length){
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing,160); //160 is the duration of the effect in milliseconds/
+          }
+        }
+        typing();
+      </script>
+</body>
+</html>

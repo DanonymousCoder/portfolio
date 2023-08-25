@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cube.css">
+    <title>Eniola portfolio</title>
+    <link rel="icon" href="logo.png"type="image/x-icon">
+</head>
+<body>
+    <div id="intro-screen">
+        <h1 class="in1"> welcome</h1>
+        <h1 class="in2"> to</h1>
+        <h1 class="in3"> my</h1>
+        <h1 class="in4"> portfolio</h1>
+        <h3 class="in5">loading...</h3>
+<div class="incir"></div>
+<div class="incir1"></div>
+<div class="incir2"></div>
+<div class="incir3"></div>
+<div class="incir4"></div>
+<div class="incir5"></div>
+</div>
+        <div id="main-content">
+            <div class="Contact">
+            <div class="page1">
+            <img src="menu@3x.png" alt="" id="popup-button">
+  
+            <div class="popup-menu" id="myPopup">
+                <a href="startup.html"><i class="fas fa-home"></i>START UP <hr></a>
+              
+                <a href="#page2"><i class="fas fa-info-circle"></i> About <hr></a>
+                <a href="#page3"><i class="fas fa-cog"></i>projects <hr></a>
+                <a href="#page4"><i class="fas fa-envelope"></i> Contact <hr></a>
+                </div>
+            <div class="cir1"></div>
+            <h2 class="text1">creative</h2>
+            <h1 class="text2">portfolio</h1>
+            <h1 class="text3">tfolio</h1>
+          <h6 class="text4" data-text="By Eniola Henry">By Eniola Henry</h6>
+          <h6 class="text5" data-name="CodeKidWizard">CodeKidWizard</h6>
+          </div>
+          <div class="page2"  id="page2">
+            <hr>
+            <div class="rec">
+              <h2 class="text7">introdution</h2>
+              <h1 class="text6">ABOUT ME</h1>
+                <h1 class="text6">ABOUT ME</h1>
+                <h6 class="text8" id="text"></h6>
+            </div>
+            <img src="logo-removebg-preview.png" alt="" class="img1" >
+            <div class="blur">
+            <h3 class="text9">Eniola Henry </h3>
+            <h3 class="text9">web developer</h3>
+        </div>
+          </div>
+<div class="page3" id="page3">
+  <hr>
+  <h2 class="text10">project</h2>
+                <h1 class="text11">portfolio</h1>
+                <div class="project">
+                  <a href="startup.html"><h3 class="text12">Gen's-stories</h3></a>
+                  <h1 class="num1">01.</h1>
+                  <p class="text15">It a website use to join genration together to build the next gen's.</p>
+                  <a href="#contact"><h3 class="text13">Fashion</h3></a>
+                  <h1 class="num2">02.</h1>
+                  <p class="text16">It helps in making shopping esay and more attrative.</p>
+                  <a href="#contact"><h3 class="text14">3D Animations</h3></a>
+                  <h1 class="num3">03.</h1>
+                  <p class="text17">A space were i try out creative 3D animations.</p>
+                </div>
+</div>
+<div id="page4" class="page4">
+  <hr>
+  <div class="rect"><h1 class="text18">thanks<br>for <br> viewing <br>my <br> porfolio</h1>
+    <p class="text19"> Please kindly  give me your feedback on my social media.</p></div>
+  <div class="contact">
+   <div class="contact2"></div>
+   <div class="contact3">
+    <a href="tel:+234 09057030622"><h4 class="number">09057030622</h4></a>
+    <a href="mailto:eniolahenry67@gmail.com" class="email">eniolahenry67@gmail.com</a>
+    <a href="http://twitter.com/CodeKidWizard" class="social"><img src="alexander-shatov-_tF3vug2FhQ-unsplash.jpg" alt=""></a>
+    <h3 class="text20">or</h3>
+    <a href="http://twitter.com/CodeKidWizard" class="social1"><img src="alexander-shatov-k1xf2D7jWUs-unsplash.jpg" alt=""></a></div>
+  </div>
+</div>
+ <img src="pen@3x.png" alt="love" class="pen-cursor">
+   <div class="line"></div>
+        </div>
+</div>
+            </div>
+        </style>
+        <script type="text/javascript">
+          var i=0,text;
+          text = "Hi,I Eniola Henry am a 13 year old software engineer passionate about building the next generation (GenZ and GenAPHLA)."
+
+          function typing() {
+            if(i<text.length){
+              document.getElementById("text").innerHTML += text.charAt(i);
+              i++;
+              
+              setTimeout(typing,200); //160 is the duration of the effect in milliseconds/
+            }
+
+  }
+          typing();
+          window.addEventListener('scroll',reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.page2,.text7,.text6,.page3,.text10,.text11,.text12,.text13,.text14,.text15,.text16,.text17');
+
+  for(var i = 0; i < reveals.length; i++){
+     var windowheight = window.innerHeight;
+     var revealtop = reveals[i].getBoundingClientRect().top;
+     var revealpoint = 150;
+
+     if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+     }
+     else{
+      reveals[i].classList.remove('active');
+     }
+  }
+}
+        </script>
+    <script src="js.js"></script>
+</body>
+</html>

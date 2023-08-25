@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen's-stories</title>
+    <link rel="icon" href="alvioni  fashion brand art design logo.png"type="image/x-icon">
+    <link rel="stylesheet" href="startup.css">
+</head>
+<body>
+        <div class="page1">
+          <header>
+            <img class="logo" src="ffffffff.png" alt="">
+            <ul>
+              <li><a href="#">Home</a></li> 
+              <li><a href="#">About us</a></li>
+              <li><a href="#" class="more">more</a></li>
+              <li><a href="#" class="login"><button>Login</button></a></li>
+            </ul>
+            </header>
+            <img src="zahra-amiri-_CiBIz537WY-unsplash.jpg" alt="" class="img1">
+            <h1 class="text1">GEN'S-STORIES helps in building the next genrations  by connecting old and young together .</h1>
+            <img src="puvvukonvict-photography-mKKPoPZ8bVs-unsplash.jpg" alt="" class="img2">
+            <img src="ivana-cajina-dnL6ZIpht2s-unsplash.jpg" alt="" class="img3">
+        </div>
+        <div class="page2">
+          <div class="slider">
+            <div class="slide active">  
+              <img src="WhatsApp Image 2023-08-21 at 21.43.49.jpeg" alt="" class="img4">
+            </div>
+            <div class="slide">
+       
+            </div>
+            <div class="slide">
+            
+            </div>
+        </div>
+        <script>    
+var slider = document.querySelector('.slider');
+var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].className = 'slide active';
+};
+
+setInterval(nextSlide, 3000);
+        </script>
+</body>
+</html>
